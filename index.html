@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1 class="h1">Image Gallery</h1>
+  </div>
+</header>
+
+
+<main>
+<div class="gallery">
+  <img src="img_nature.jpg" alt="Nature" onclick="openModal(this);">
+  <img src="img_snow.jpg" alt="Snow" onclick="openModal(this);">
+  <img src="img_mountains.jpg" alt="Mountains" onclick="openModal(this);">
+  <img src="img_lights.jpg" alt="Lights" onclick="openModal(this);">
+</div>
+</main>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImg">
+</div>
+
+<script src="./java.js"></script>
+</body>
+</html>
